@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: ips-meds
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
 name: ExampleIG

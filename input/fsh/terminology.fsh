@@ -22,3 +22,17 @@ Description:  "Marketing Authorization Holder."
 * $SCT#712843002 "Allergy to celery"
 * $SCT#782575000 "Allergy to lupine seed"
 
+
+ValueSet: CSMedRelationTypes
+Id: Cs-med-relation-types
+Title: "Marketing Authorization Holder"
+Description:  "Marketing Authorization Holder."
+* $SCT#712843002 "Allergy to celery"
+* $SCT#782575000 "Allergy to lupine seed"
+
+ValueSet: VSMedRelationTypes
+Id: vs-med-relation-types
+Title: "Marketing Authorization Holder"
+Description:  "Marketing Authorization Holder."
+* $SCT#712843002 "Allergy to celery"
+* $SCT#782575000 "Allergy to lupine seed"

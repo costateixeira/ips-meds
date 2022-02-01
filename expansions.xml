@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="83034f0f-bb02-464d-9738-be4d15abe6d7"/>
+  <meta>
+    <lastUpdated value="2022-02-01T19:25:57.704+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/Cs-med-relation-types"/>
+    <resource>
+      <ValueSet>
+        <id value="Cs-med-relation-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/Cs-med-relation-types"/>
+        <version value="1.0.0"/>
+        <name value="CSMedRelationTypes"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-02-01T19:25:57+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:963649bf-c520-492d-bcd7-afe3eaa388ea"/>
+          <timestamp value="2022-02-01T19:26:42+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-marketing-authorization-holder"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder"/>
+        <version value="1.0.0"/>
+        <name value="MAHVS"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-02-01T19:25:57+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bbe9e1d2-3cee-42ba-84d3-5745565975ec"/>
+          <timestamp value="2022-02-01T19:26:43+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/vs-ingredient"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-ingredient"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/vs-ingredient"/>
+        <version value="1.0.0"/>
+        <name value="VSIngredient"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-02-01T19:25:57+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:80239cfc-d7ca-4d45-84d7-928323518dd1"/>
+          <timestamp value="2022-02-01T19:26:43+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/vs-med-relation-types"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-med-relation-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/vs-med-relation-types"/>
+        <version value="1.0.0"/>
+        <name value="VSMedRelationTypes"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-02-01T19:25:57+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:56722e65-7a38-4a08-989a-eff11003edfc"/>
+          <timestamp value="2022-02-01T19:26:43+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/vs-role"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-role"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-712843002"> </a>
+                  <a href="http://snomed.info/id/712843002">712843002</a>
+                </td>
+                <td>Allergy to celery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782575000"> </a>
+                  <a href="http://snomed.info/id/782575000">782575000</a>
+                </td>
+                <td>Allergy to lupine seed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/vs-role"/>
+        <version value="1.0.0"/>
+        <name value="VSRole"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-02-01T19:25:57+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:00c8d10a-253e-440d-aa1f-326a1acdd34b"/>
+          <timestamp value="2022-02-01T19:26:43+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712843002"/>
+            <display value="Allergy to celery"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782575000"/>
+            <display value="Allergy to lupine seed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

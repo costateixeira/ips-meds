@@ -1,0 +1,70 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 3, warn = 18, info = 2
+IG Publisher Version: 1.1.98
+Generated Tue Feb 01 19:26:59 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 4 / 6 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-mp : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-pc : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-php : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IPSXtended : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationStatement-uv-ips-ext : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Cs-med-relation-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-ingredient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-marketing-authorization-holder : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-role : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IPSXtended.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicationStatement-uv-ips-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/definedMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/medRelation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-questionnaire-mp-form.html: unexpected non-end of element null::div  at line 209 column 132
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx-form.html: unexpected non-end of element null::div  at line 209 column 134
+ERROR: /github/workspace/output/Questionnaire-questionnaire-pc-form.html: unexpected non-end of element null::div  at line 209 column 132
+ERROR: /github/workspace/output/Questionnaire-questionnaire-php-form.html: unexpected non-end of element null::div  at line 209 column 133
+== fsh-generated/resources/ImplementationGuide-ips-meds.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/ips-meds) does not match the URL (http://example.com/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: ips-meds/http://example.com/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/ips-meds vs http://example.com/fhir/example
+== fsh-generated/resources/Questionnaire-questionnaire-ipsx.json ==
+WARNING: Questionnaire/questionnaire-ipsx: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Questionnaire-questionnaire-mp.json ==
+WARNING: Questionnaire/questionnaire-mp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Questionnaire-questionnaire-pc.json ==
+WARNING: Questionnaire/questionnaire-pc: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Questionnaire-questionnaire-php.json ==
+WARNING: Questionnaire/questionnaire-php: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/StructureDefinition-DefinedMed.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-IPSXtended.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/IPSXtended'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationStatement-uv-ips-ext.json ==
+WARNING: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+INFORMATION: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition.snapshot.element[16].binding: The element MedicationStatement.medication[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
+INFORMATION: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition.snapshot.element[45].binding: The element MedicationStatement.dosage.asNeeded[x] has a binding, and has multiple types ([boolean, CodeableConcept]). The binding will apply to all the types
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/MedicationStatement-uv-ips-ext'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-definedMedication.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-medRelation.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-relatedMedication.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-Cs-med-relation-types.json ==
+== fsh-generated/resources/ValueSet-vs-ingredient.json ==
+== fsh-generated/resources/ValueSet-vs-marketing-authorization-holder.json ==
+== fsh-generated/resources/ValueSet-vs-med-relation-types.json ==
+== fsh-generated/resources/ValueSet-vs-role.json ==

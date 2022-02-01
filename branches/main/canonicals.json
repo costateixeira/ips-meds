@@ -1,0 +1,121 @@
+[
+  {
+    "id": "ips-meds",
+    "type": "ImplementationGuide",
+    "url": "http://example.com/fhir/example",
+    "version": "1.0.0",
+    "name": "ExampleIG"
+  },
+  {
+    "id": "questionnaire-ipsx",
+    "type": "Questionnaire",
+    "url": "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx",
+    "version": "1.0.0",
+    "name": "questionnaire-ipsx"
+  },
+  {
+    "id": "questionnaire-mp",
+    "type": "Questionnaire",
+    "url": "http://example.com/fhir/example/Questionnaire/questionnaire-mp",
+    "version": "1.0.0",
+    "name": "questionnaire-mp"
+  },
+  {
+    "id": "questionnaire-pc",
+    "type": "Questionnaire",
+    "url": "http://example.com/fhir/example/Questionnaire/questionnaire-pc",
+    "version": "1.0.0",
+    "name": "questionnaire-pc"
+  },
+  {
+    "id": "questionnaire-php",
+    "type": "Questionnaire",
+    "url": "http://example.com/fhir/example/Questionnaire/questionnaire-php",
+    "version": "1.0.0",
+    "name": "questionnaire-php"
+  },
+  {
+    "id": "DefinedMed",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
+    "version": "1.0.0",
+    "name": "DefinedMed"
+  },
+  {
+    "id": "IPSXtended",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/IPSXtended",
+    "version": "1.0.0",
+    "name": "IPSXtended"
+  },
+  {
+    "id": "MedicationStatement-uv-ips-ext",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/MedicationStatement-uv-ips-ext",
+    "version": "1.0.0",
+    "name": "MedicationStatement-uv-ips-ext"
+  },
+  {
+    "id": "definedMedication",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/definedMedication",
+    "version": "1.0.0",
+    "name": "DefinedMedication"
+  },
+  {
+    "id": "drugCharacteristic",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
+    "version": "1.0.0",
+    "name": "DrugCharacteristic"
+  },
+  {
+    "id": "medRelation",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/medRelation",
+    "version": "1.0.0",
+    "name": "MedRelation"
+  },
+  {
+    "id": "relatedMedication",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication",
+    "version": "1.0.0",
+    "name": "RelatedMedication"
+  },
+  {
+    "id": "Cs-med-relation-types",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/Cs-med-relation-types",
+    "version": "1.0.0",
+    "name": "CSMedRelationTypes"
+  },
+  {
+    "id": "vs-ingredient",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/vs-ingredient",
+    "version": "1.0.0",
+    "name": "VSIngredient"
+  },
+  {
+    "id": "vs-marketing-authorization-holder",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
+    "version": "1.0.0",
+    "name": "MAHVS"
+  },
+  {
+    "id": "vs-med-relation-types",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/vs-med-relation-types",
+    "version": "1.0.0",
+    "name": "VSMedRelationTypes"
+  },
+  {
+    "id": "vs-role",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/vs-role",
+    "version": "1.0.0",
+    "name": "VSRole"
+  }
+]

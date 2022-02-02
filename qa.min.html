@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 4, errors = 3, warn = 18, info = 2 -->
+<!-- broken links = 4, errors = 7, warn = 18, info = 2 -->
 <head>
   <title>ExampleIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ExampleIG</h1>
- <p>Generated Tue Feb 01 19:36:49 UTC 2022, FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed Feb 02 09:01:58 UTC 2022, FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.98</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ips-meds, Canonical = http://example.com/fhir/example</td></tr>
@@ -51,8 +51,8 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1643744166425)</td></tr>
- <tr><td>Summary:</td><td> broken links = 4, errors = 3, warn = 18, info = 2</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1643792447744)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 4, errors = 7, warn = 18, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -64,8 +64,8 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-ips-meds"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-ipsx"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-ipsx"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-mp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-mp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -122,13 +122,13 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/medRelation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-questionnaire-pc-form.html">output/Questionnaire-questionnaire-pc-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 209 column 132</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-mp-form.html">output/Questionnaire-questionnaire-mp-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 209 column 132</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-ipsx-form.html">output/Questionnaire-questionnaire-ipsx-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 209 column 134</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-pc-form.html">output/Questionnaire-questionnaire-pc-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 209 column 132</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-php-form.html">output/Questionnaire-questionnaire-php-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 209 column 133</b></td>
@@ -163,6 +163,18 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire</b></td><td><b>warning</b></td><td title="que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[0]</b></td><td><b>error</b></td><td title="que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed"><b>que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[1].item[2].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[1].item[2].extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[1].item[2].extension[0].value.ofType(Expression)</b></td><td><b>error</b></td><td title="exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed"><b>exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -320,6 +332,14 @@
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-ipsx.html">fsh-generated/resources/Questionnaire-questionnaire-ipsx.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="RESOURCE_CANONICAL_MISMATCH"> </a>
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
@@ -333,6 +353,14 @@
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="ImplementationGuide-ips-meds.html">fsh-generated/resources/ImplementationGuide-ips-meds.json</a></td><td><b>Resource id/url mismatch: ips-meds/http://example.com/fhir/example</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-ipsx.html">fsh-generated/resources/Questionnaire-questionnaire-ipsx.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression' does not resolve</b></td>
    </tr>
 </table>
 </body>

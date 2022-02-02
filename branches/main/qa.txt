@@ -1,12 +1,12 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 3, warn = 18, info = 2
+err = 7, warn = 18, info = 2
 IG Publisher Version: 1.1.98
-Generated Tue Feb 01 19:36:50 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = http://example.com/fhir/example)
+Generated Wed Feb 02 09:01:58 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 4 / 6 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 4 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-mp : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-pc : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-php : 0 / 1 / 1
@@ -30,9 +30,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicationStatement-uv-ips-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/definedMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/medRelation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-questionnaire-pc-form.html: unexpected non-end of element null::div  at line 209 column 132
 ERROR: /github/workspace/output/Questionnaire-questionnaire-mp-form.html: unexpected non-end of element null::div  at line 209 column 132
 ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx-form.html: unexpected non-end of element null::div  at line 209 column 134
-ERROR: /github/workspace/output/Questionnaire-questionnaire-pc-form.html: unexpected non-end of element null::div  at line 209 column 132
 ERROR: /github/workspace/output/Questionnaire-questionnaire-php-form.html: unexpected non-end of element null::div  at line 209 column 133
 == fsh-generated/resources/ImplementationGuide-ips-meds.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/ips-meds) does not match the URL (http://example.com/fhir/example)
@@ -40,6 +40,10 @@ ERROR: ImplementationGuide.url: Resource id/url mismatch: ips-meds/http://exampl
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/ips-meds vs http://example.com/fhir/example
 == fsh-generated/resources/Questionnaire-questionnaire-ipsx.json ==
 WARNING: Questionnaire/questionnaire-ipsx: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: Questionnaire/questionnaire-ipsx: Questionnaire.item[0]: que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/questionnaire-ipsx: Questionnaire.item[1].item[2].extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression is unknown, and not allowed here
+ERROR: Questionnaire/questionnaire-ipsx: Questionnaire.item[1].item[2].extension[0].url: URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression' does not resolve
+ERROR: Questionnaire/questionnaire-ipsx: Questionnaire.item[1].item[2].extension[0].value.ofType(Expression): exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed
 == fsh-generated/resources/Questionnaire-questionnaire-mp.json ==
 WARNING: Questionnaire/questionnaire-mp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/Questionnaire-questionnaire-pc.json ==

@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ExampleIG</h1>
- <p>Generated Wed Feb 02 09:01:57 UTC 2022, FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Feb 02 15:12:29 UTC 2022, FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.98</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ips-meds, Canonical = http://example.com/fhir/example</td></tr>
@@ -51,7 +51,7 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1643792447744)</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1643814716951)</td></tr>
  <tr><td>Summary:</td><td> broken links = 4, errors = 7, warn = 18, info = 2</td></tr>
 </table>
  <table class="grid">
@@ -183,13 +183,13 @@
      <td><b>Questionnaire.item[0]</b></td><td><b>error</b></td><td title="que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed"><b>que-1: 'Group items must have nested items, display items cannot have nested items' Rule 'Group items must have nested items, display items cannot have nested items' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire.item[1].item[2].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression is unknown, and not allowed here</b></td>
+     <td><b>Questionnaire.item[1].item[3].extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire.item[1].item[2].extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression' does not resolve</b></td>
+     <td><b>Questionnaire.item[1].item[3].extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire.item[1].item[2].extension[0].value.ofType(Expression)</b></td><td><b>error</b></td><td title="exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed"><b>exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed</b></td>
+     <td><b>Questionnaire.item[1].item[3].extension[0].value.ofType(Expression)</b></td><td><b>error</b></td><td title="exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed"><b>exp-1: 'An expression or a reference must be provided' Rule 'An expression or a reference must be provided' Failed</b></td>
    </tr>
 </table>
 <hr/>

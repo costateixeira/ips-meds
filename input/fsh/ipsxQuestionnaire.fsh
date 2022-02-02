@@ -13,8 +13,25 @@ Title:    "International Patient Summary - Extended Medications"
 
 
 
+* insert Question(,patient,Patient,group,true,true)
 * insert Question(,meds,Medications,group,true,true)
 * item[=]
+  * insert Question(,prodcode,Product Code,string,false,false)
+  * insert Question(,xbproduct,Cross-border Product?,boolean,false,false)
+
+  * insert Question(,medsx,Medications-UNICOM,group,false,true)
+
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+
+* item[=].item[=].enableWhen.question = "xbproduct"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].enableWhen.answerBoolean = true
+
+
+
+
+* item[=].item[=]
   * insert Question(,phpid,Pharmaceutical Product Identifier,string,false,false)
   * insert Question(,mpid,Medicinal Product Identifier,string,false,false)
   * insert Question(,pcid,Packaged Product Identifier,string,false,false)

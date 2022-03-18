@@ -310,6 +310,32 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -414,10 +440,38 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/Cs-med-relation-types"
+          "reference": "ValueSet/vs-dose-form"
         },
-        "name": "Marketing Authorization Holder",
-        "description": "Marketing Authorization Holder.",
+        "name": "Dose Form",
+        "description": "Dose Form.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-ingredient"
+        },
+        "name": "Ingredient",
+        "description": "Ingredient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/be-marketingauthorization-vs"
+        },
+        "name": "Marketing Authorization Value Set",
+        "description": "Indicates the Marketing Authorization for a product",
         "exampleBoolean": false
       },
       {
@@ -442,10 +496,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-ingredient"
+          "reference": "ValueSet/vs-med-relation-types"
         },
-        "name": "Marketing Authorization Holder",
-        "description": "Marketing Authorization Holder.",
+        "name": "Medication Relation Types",
+        "description": "Medication Relation Types.",
         "exampleBoolean": false
       },
       {
@@ -456,10 +510,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-med-relation-types"
+          "reference": "ValueSet/vs-pack-type"
         },
-        "name": "Marketing Authorization Holder",
-        "description": "Marketing Authorization Holder.",
+        "name": "Medication Package Types",
+        "description": "Medication Package Types.",
         "exampleBoolean": false
       },
       {
@@ -472,8 +526,120 @@
         "reference": {
           "reference": "ValueSet/vs-role"
         },
-        "name": "Marketing Authorization Holder",
-        "description": "Marketing Authorization Holder.",
+        "name": "Ingredient role Value Set",
+        "description": "Indicates the role that an ingredient takes into a product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-route-holder"
+        },
+        "name": "Route Holder",
+        "description": "Route Holder.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-doseform"
+        },
+        "name": "Dose Form Code System",
+        "description": "Codes for Dose Form",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-ingredient"
+        },
+        "name": "Ingredient Code System",
+        "description": "Codes for ingredient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-marketingauthorization-holder"
+        },
+        "name": "Marketing Authorization Holder Code System",
+        "description": "Codes for Marketing Authorization Holder",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/Cs-med-relation-types"
+        },
+        "name": "Medication Relation Types",
+        "description": "Medication Relation Types.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-pack-types"
+        },
+        "name": "Medication Package Types",
+        "description": "Medication Package Types.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-role"
+        },
+        "name": "Role Code System",
+        "description": "Codes for ingredient role",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-route-holder"
+        },
+        "name": "Route Code System",
+        "description": "Codes for Administration Route",
         "exampleBoolean": false
       },
       {

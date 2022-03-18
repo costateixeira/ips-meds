@@ -3,14 +3,14 @@
   "id": "vs-ingredient",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td><a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-ingredient.html\"><code>http://example.com/fhir/example/CodeSystem/cs-ingredient</code></a></li></ul></div>"
   },
   "url": "http://example.com/fhir/example/ValueSet/vs-ingredient",
   "version": "1.0.0",
   "name": "VSIngredient",
-  "title": "Marketing Authorization Holder",
+  "title": "Ingredient",
   "status": "active",
-  "date": "2022-02-03T10:38:38+00:00",
+  "date": "2022-03-18T08:28:00+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "description": "Marketing Authorization Holder.",
+  "description": "Ingredient.",
   "jurisdiction": [
     {
       "coding": [
@@ -52,17 +52,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "712843002",
-            "display": "Allergy to celery"
-          },
-          {
-            "code": "782575000",
-            "display": "Allergy to lupine seed"
-          }
-        ]
+        "system": "http://example.com/fhir/example/CodeSystem/cs-ingredient"
       }
     ]
   }

@@ -296,6 +296,30 @@
          fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -398,14 +422,42 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/ValueSet/Cs-med-relation-types>;
-         fhir:Reference.reference [ fhir:value "ValueSet/Cs-med-relation-types" ]
+         fhir:link <http://example.com/fhir/example/ValueSet/vs-dose-form>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-dose-form" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose Form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dose Form." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/vs-ingredient>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/be-marketingauthorization-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-marketingauthorization-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the Marketing Authorization for a product" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -419,21 +471,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/ValueSet/vs-ingredient>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-ingredient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -443,11 +481,25 @@
          fhir:link <http://example.com/fhir/example/ValueSet/vs-med-relation-types>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-med-relation-types" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Relation Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Relation Types." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/vs-pack-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-pack-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Package Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Package Types." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -457,11 +509,123 @@
          fhir:link <http://example.com/fhir/example/ValueSet/vs-role>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-role" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorization Holder." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient role Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the role that an ingredient takes into a product" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/vs-route-holder>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-route-holder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Route Holder" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Route Holder." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-doseform>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-doseform" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose Form Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Dose Form" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-ingredient>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for ingredient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-marketingauthorization-holder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Marketing Authorization Holder" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/Cs-med-relation-types>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/Cs-med-relation-types" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Relation Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Relation Types." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-pack-types>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-pack-types" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Package Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Package Types." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-role>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for ingredient role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/cs-route-holder>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-route-holder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Route Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Administration Route" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -475,7 +639,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPS Form" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -489,7 +653,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product identifying attributes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -503,7 +667,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product identifying attributes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

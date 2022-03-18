@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "Cs-med-relation-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://example.com/fhir/example/CodeSystem/Cs-med-relation-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"Cs-med-relation-types-000001\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"Cs-med-relation-types-000002\"> </a></td><td>Insuline lispro</td></tr></table></div>"
+  },
+  "url": "http://example.com/fhir/example/CodeSystem/Cs-med-relation-types",
+  "version": "1.0.0",
+  "name": "CSMedRelationTypes",
+  "title": "Medication Relation Types",
+  "status": "active",
+  "date": "2022-03-18T08:28:00+00:00",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Medication Relation Types.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "000001",
+      "display": "Paracetamol"
+    },
+    {
+      "code": "000002",
+      "display": "Insuline lispro"
+    }
+  ]
+}

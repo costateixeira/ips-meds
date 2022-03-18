@@ -58,7 +58,7 @@ Title:    "MP Questionnaire"
 
 * insert Question(,marketingauhtorization,Marketing Authorization of the product,string,true,true)
 * insert Question(,marketingauhtorization-holder,Marketing Auhtorization Holder,string,true,true)
-* item[=].answerValueSet = Canonical(MAHVS)
+* item[=].answerValueSet = Canonical(VSMAHolder-cont)
 * insert Question(,brandname,Brand Name,choice,true,true)
 
 
@@ -88,7 +88,7 @@ Title:    "Packaged Product"
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
 * insert Question(,marketingauhtorization,Marketing Authorization of the product,string,true,true)
 * insert Question(,marketingauhtorization-holder,Marketing Auhtorization Holder,string,true,true)
-* item[=].answerValueSet = Canonical(MAHVS)
+* item[=].answerValueSet = Canonical(VSMAHolder)
 * insert Question(,brandname,Brand Name,choice,true,true)
 * insert Question(,package,Package,group,true,false)
 * insert Question(item[=].,packsize,Package Size,quantity,true,false)

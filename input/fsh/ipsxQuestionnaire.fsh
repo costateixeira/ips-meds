@@ -1,8 +1,15 @@
+//Question(context, linkId, text, type, required, repeats)
 
 Instance: questionnaire-ipsx
 InstanceOf: Questionnaire
 Description: "IPS Form"
 Title:    "International Patient Summary - Extended Medications"
+
+* contained[+] = VSRole-cont
+* contained[+] = VSMAHolder-cont
+* contained[+] = VSIngredient-cont
+* contained[+] = VSRoute-cont
+* contained[+] = VSDoseForm-cont
 
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-ipsx"
@@ -42,19 +49,32 @@ Title:    "International Patient Summary - Extended Medications"
   
   * insert Question(,ingredient,Ingredient,group,true,true)
   * insert Question(item[=].,ingredient_substance,Substance,open-choice,true,false)
-  * item[=].item[=].answerValueSet = Canonical(VSIngredient)
+  * item[=].item[=].answerValueSet = Canonical(VSIngredient-cont)
   * insert Question(item[=].,ingredient_strength,Strength,quantity,true,false)
+
+  * item[=].item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+  * item[=].item[=].extension[=].valueCoding = http://unitsofmeasure.org#mg "mg"
+  * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+  * item[=].item[=].extension[=].valueCoding = http://unitsofmeasure.org#ml "ml"
+
+
   * insert Question(item[=].,ingredient_role,Role,choice,true,false)
-  * item[=].item[=].answerValueSet = Canonical(VSRole)
+  * item[=].item[=].answerValueSet = Canonical(VSRole-cont)
   * insert Question(,doseform,Dose Form,choice,true,false)
-  * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medication-form-codes"
-  * insert Question(,route,Route of administration,choice,true,true)
-  * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
+  * item[=].answerValueSet =  Canonical(VSDoseForm-cont)
+  * insert Question(,route,Route of administration,choice,true,false)
+  * item[=].answerValueSet =  Canonical(VSRoute-cont)
 //  * insert Question(,marketingauhtorization,Marketing Authorization of the product,string,true,true)
-  * insert Question(,marketingauhtorization-holder,Marketing Auhtorization Holder,string,true,true)
-  * item[=].answerValueSet = Canonical(MAHVS)
-  * insert Question(,brandname,Brand Name,choice,true,true)
+  * insert Question(,marketingauhtorization-holder,Marketing Auhtorization Holder,choice,true,false)
+  * item[=].answerValueSet = Canonical(VSMAHolder-cont)
+  * insert Question(,brandname,Brand Name,choice,true,false)
   * insert Question(,package,Package,group,true,false)
   * insert Question(item[=].,packsize,Package Size,quantity,true,false)
+  * item[=].item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+  * item[=].item[=].extension[=].valueCoding = http://unitsofmeasure.org#tbl "tablets"
+  * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+  * item[=].item[=].extension[=].valueCoding = http://unitsofmeasure.org#ml "ml"
+  * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption"
+  * item[=].item[=].extension[=].valueCoding = http://unitsofmeasure.org#1 "units"
   * insert Question(item[=].,packtype,Package Type,choice,true,false)
-  * item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"
+  * item[=].answerValueSet = Canonical(VSPackType-cont)

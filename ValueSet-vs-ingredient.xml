@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-ingredient"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-ingredient.html"><code>http://example.com/fhir/example/CodeSystem/cs-ingredient</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/712843002">712843002</a></td><td>Allergy to celery</td></tr><tr><td><a href="http://snomed.info/id/782575000">782575000</a></td><td>Allergy to lupine seed</td></tr></table></li></ul></div>
   </text>
   <url value="http://example.com/fhir/example/ValueSet/vs-ingredient"/>
   <version value="1.0.0"/>
   <name value="VSIngredient"/>
-  <title value="Ingredient"/>
+  <title value="Marketing Authorization Holder"/>
   <status value="active"/>
-  <date value="2022-03-18T08:28:00+00:00"/>
+  <date value="2022-03-25T11:08:48+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -31,7 +31,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Ingredient."/>
+  <description value="Marketing Authorization Holder."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -41,7 +41,15 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://example.com/fhir/example/CodeSystem/cs-ingredient"/>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="712843002"/>
+        <display value="Allergy to celery"/>
+      </concept>
+      <concept>
+        <code value="782575000"/>
+        <display value="Allergy to lupine seed"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

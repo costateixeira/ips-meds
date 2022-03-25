@@ -1,229 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a6611d50-e599-444f-88d1-5ec586aebf51",
+  "id" : "c8adc726-8694-470d-acec-d7121ad88934",
   "meta" : {
-    "lastUpdated" : "2022-03-18T08:28:00.098+00:00"
+    "lastUpdated" : "2022-03-25T11:08:48.220+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-dose-form",
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/Cs-med-relation-types",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-dose-form",
+      "id" : "Cs-med-relation-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-doseform.html\">Dose Form Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-doseform.html\"><code>http://example.com/fhir/example/CodeSystem/cs-doseform</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000001\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000001\">000001</a></td><td>Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000002\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000002\">000002</a></td><td>Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000003\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000003\">000003</a></td><td>Syringe for injection</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></div>"
       },
-      "url" : "http://example.com/fhir/example/ValueSet/vs-dose-form",
+      "url" : "http://example.com/fhir/example/ValueSet/Cs-med-relation-types",
       "version" : "1.0.0",
-      "name" : "VSDoseForm",
-      "title" : "Dose Form",
-      "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
-      "publisher" : "My Organization",
-      "contact" : [{
-        "name" : "My Organization",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://example.com/committees"
-        },
-        {
-          "system" : "email",
-          "value" : "my-group@example.com"
-        }]
-      },
-      {
-        "name" : "Bob Smith",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "bobsmith@example.com",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Dose Form.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:c1ee4232-c50c-4c61-9b1b-22de32f7c6ac",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-doseform|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "code" : "000001",
-          "display" : "Tablet"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "code" : "000002",
-          "display" : "Capsule"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "code" : "000003",
-          "display" : "Syringe for injection"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-ingredient",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-ingredient",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-ingredient.html\">Ingredient Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-ingredient.html\"><code>http://example.com/fhir/example/CodeSystem/cs-ingredient</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000001\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000001\">000001</a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000002\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000002\">000002</a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000003\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000003\">000003</a></td><td>Tramadol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000004\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000004\">000004</a></td><td>Rosuvastatin</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/vs-ingredient",
-      "version" : "1.0.0",
-      "name" : "VSIngredient",
-      "title" : "Ingredient",
-      "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
-      "publisher" : "My Organization",
-      "contact" : [{
-        "name" : "My Organization",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://example.com/committees"
-        },
-        {
-          "system" : "email",
-          "value" : "my-group@example.com"
-        }]
-      },
-      {
-        "name" : "Bob Smith",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "bobsmith@example.com",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Ingredient.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:e93529e9-00f2-492f-a33e-f54e5d2dd064",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-ingredient|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "code" : "000001",
-          "display" : "Paracetamol"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "code" : "000002",
-          "display" : "Insuline lispro"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "code" : "000003",
-          "display" : "Tramadol"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "code" : "000004",
-          "display" : "Rosuvastatin"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/be-marketingauthorization-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-marketingauthorization-vs",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/be-marketingauthorization-vs",
-      "version" : "1.0.0",
-      "name" : "VSMA",
-      "title" : "Marketing Authorization Value Set",
-      "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
-      "publisher" : "My Organization",
-      "contact" : [{
-        "name" : "My Organization",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://example.com/committees"
-        },
-        {
-          "system" : "email",
-          "value" : "my-group@example.com"
-        }]
-      },
-      {
-        "name" : "Bob Smith",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "bobsmith@example.com",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Indicates the Marketing Authorization for a product",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:e0e0a785-38f1-40f2-9356-0666f3615ecc",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-marketing-authorization-holder",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-marketingauthorization-holder.html\">Marketing Authorization Holder Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-marketingauthorization-holder.html\"><code>http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000001\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000001\">000001</a></td><td>AstraZeneca</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000002\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000002\">000002</a></td><td>Pfizer</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000003\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000003\">000003</a></td><td>Bayer</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
-      "version" : "1.0.0",
-      "name" : "VSMAHolder",
+      "name" : "CSMedRelationTypes",
       "title" : "Marketing Authorization Holder",
       "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
+      "date" : "2022-03-25T11:08:48+00:00",
       "publisher" : "My Organization",
       "contact" : [{
         "name" : "My Organization",
@@ -253,31 +49,174 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:25405dc1-81ae-4907-a87c-a18347260cc9",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
+        "identifier" : "urn:uuid:33927f1d-65da-4852-89b0-1be5e9741e16",
+        "timestamp" : "2022-03-25T11:09:13+00:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
           "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder|1.0.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "code" : "000001",
-          "display" : "AstraZeneca"
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
         },
         {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "code" : "000002",
-          "display" : "Pfizer"
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-marketing-authorization-holder",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
+      "version" : "1.0.0",
+      "name" : "MAHVS",
+      "title" : "Marketing Authorization Holder",
+      "status" : "active",
+      "date" : "2022-03-25T11:08:48+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
         },
         {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "code" : "000003",
-          "display" : "Bayer"
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Marketing Authorization Holder.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2c610642-70f8-422d-a4e2-122f6b468094",
+        "timestamp" : "2022-03-25T11:09:13+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-ingredient",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-ingredient",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/vs-ingredient",
+      "version" : "1.0.0",
+      "name" : "VSIngredient",
+      "title" : "Marketing Authorization Holder",
+      "status" : "active",
+      "date" : "2022-03-25T11:08:48+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Marketing Authorization Holder.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:39cb23c4-af54-4e69-904a-aa7d8c1355ba",
+        "timestamp" : "2022-03-25T11:09:13+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
         }]
       }
     }
@@ -289,14 +228,14 @@
       "id" : "vs-med-relation-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-Cs-med-relation-types.html\">Medication Relation Types v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-Cs-med-relation-types.html\"><code>http://example.com/fhir/example/CodeSystem/Cs-med-relation-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-Cs-med-relation-types-000001\"> </a>  <a href=\"CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-000001\">000001</a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-Cs-med-relation-types-000002\"> </a>  <a href=\"CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-000002\">000002</a></td><td>Insuline lispro</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></div>"
       },
       "url" : "http://example.com/fhir/example/ValueSet/vs-med-relation-types",
       "version" : "1.0.0",
       "name" : "VSMedRelationTypes",
-      "title" : "Medication Relation Types",
+      "title" : "Marketing Authorization Holder",
       "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
+      "date" : "2022-03-25T11:08:48+00:00",
       "publisher" : "My Organization",
       "contact" : [{
         "name" : "My Organization",
@@ -317,7 +256,7 @@
           "use" : "work"
         }]
       }],
-      "description" : "Medication Relation Types.",
+      "description" : "Marketing Authorization Holder.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -326,94 +265,30 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d9554ac8-831f-4113-aff1-2e4e35158e09",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
+        "identifier" : "urn:uuid:f46d59a7-29c8-4241-869e-14b38f6c9ca0",
+        "timestamp" : "2022-03-25T11:09:13+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/Cs-med-relation-types|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/Cs-med-relation-types",
-          "code" : "000001",
-          "display" : "Paracetamol"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/Cs-med-relation-types",
-          "code" : "000002",
-          "display" : "Insuline lispro"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-pack-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-pack-type",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-pack-types.html\">Medication Package Types v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-pack-types.html\"><code>http://example.com/fhir/example/CodeSystem/cs-pack-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-pack-types-000001\"> </a>  <a href=\"CodeSystem-cs-pack-types.html#cs-pack-types-000001\">000001</a></td><td>Box</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-pack-types-000002\"> </a>  <a href=\"CodeSystem-cs-pack-types.html#cs-pack-types-000002\">000002</a></td><td>Vial</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/vs-pack-type",
-      "version" : "1.0.0",
-      "name" : "VSPackType",
-      "title" : "Medication Package Types",
-      "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
-      "publisher" : "My Organization",
-      "contact" : [{
-        "name" : "My Organization",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://example.com/committees"
-        },
-        {
-          "system" : "email",
-          "value" : "my-group@example.com"
-        }]
-      },
-      {
-        "name" : "Bob Smith",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "bobsmith@example.com",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Medication Package Types.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:3e2c761f-b5e6-4666-a647-2519db128c07",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         },
         {
           "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-pack-types|1.0.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-pack-types",
-          "code" : "000001",
-          "display" : "Box"
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
         },
         {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-pack-types",
-          "code" : "000002",
-          "display" : "Vial"
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
         }]
       }
     }
@@ -425,14 +300,14 @@
       "id" : "vs-role",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-role.html\">Role Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-role.html\"><code>http://example.com/fhir/example/CodeSystem/cs-role</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-AP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-AP\">AP</a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-NAP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-NAP\">NAP</a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-EXP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-EXP\">EXP</a></td><td>Excipient</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr></table></div>"
       },
       "url" : "http://example.com/fhir/example/ValueSet/vs-role",
       "version" : "1.0.0",
       "name" : "VSRole",
-      "title" : "Ingredient role Value Set",
+      "title" : "Marketing Authorization Holder",
       "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
+      "date" : "2022-03-25T11:08:48+00:00",
       "publisher" : "My Organization",
       "contact" : [{
         "name" : "My Organization",
@@ -453,7 +328,7 @@
           "use" : "work"
         }]
       }],
-      "description" : "Indicates the role that an ingredient takes into a product",
+      "description" : "Marketing Authorization Holder.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -462,364 +337,30 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d40de9ad-ccf2-4702-860d-5c3e42856980",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-role|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "code" : "AP",
-          "display" : "Active Principle"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "code" : "NAP",
-          "display" : "Non-Active"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "code" : "EXP",
-          "display" : "Excipient"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/vs-route-holder",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-route-holder",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-route-holder.html\">Route Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-route-holder.html\"><code>http://example.com/fhir/example/CodeSystem/cs-route-holder</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-route-holder-000001\"> </a>  <a href=\"CodeSystem-cs-route-holder.html#cs-route-holder-000001\">000001</a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-route-holder-000002\"> </a>  <a href=\"CodeSystem-cs-route-holder.html#cs-route-holder-000002\">000002</a></td><td>Intramuscular</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/vs-route-holder",
-      "version" : "1.0.0",
-      "name" : "VSRoute",
-      "title" : "Route Holder",
-      "status" : "active",
-      "date" : "2022-03-18T08:28:00+00:00",
-      "publisher" : "My Organization",
-      "contact" : [{
-        "name" : "My Organization",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://example.com/committees"
-        },
-        {
-          "system" : "email",
-          "value" : "my-group@example.com"
-        }]
-      },
-      {
-        "name" : "Bob Smith",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "bobsmith@example.com",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Route Holder.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:95b93ab9-f836-4d3d-8e11-e5bd969fcfb4",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
+        "identifier" : "urn:uuid:40549181-4139-453b-896e-a34c15ed2b49",
+        "timestamp" : "2022-03-25T11:09:13+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
           "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-route-holder|1.0.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-route-holder",
-          "code" : "000001",
-          "display" : "Oral"
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
         },
         {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-route-holder",
-          "code" : "000002",
-          "display" : "Intramuscular"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-role-cont",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-role-cont",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-vs-role.html\">Ingredient role Value Set v1.0.0 (ValueSet)</a></li><li><a href=\"CodeSystem-cs-role.html\">Role Code System v1.0.0 (CodeSystem)</a></li></ul></div><p>All codes in this table are from the system <a href=\"CodeSystem-cs-role.html\"><code>http://example.com/fhir/example/CodeSystem/cs-role</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-AP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-AP\">AP</a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-NAP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-NAP\">NAP</a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-role-EXP\"> </a>  <a href=\"CodeSystem-cs-role.html#cs-role-EXP\">EXP</a></td><td>Excipient</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-role-cont",
-      "version" : "1.0.0",
-      "name" : "VSRole-cont",
-      "status" : "active",
-      "expansion" : {
-        "identifier" : "urn:uuid:36582fee-6f18-4fb6-94db-1f4f99908d96",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/ValueSet/vs-role|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-role|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "AP",
-          "display" : "Active Principle"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "NAP",
-          "display" : "Non-Active"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-role",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "EXP",
-          "display" : "Excipient"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-maholder-cont",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-maholder-cont",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-cs-marketingauthorization-holder.html\">Marketing Authorization Holder Code System v1.0.0 (CodeSystem)</a></li><li><a href=\"ValueSet-vs-marketing-authorization-holder.html\">Marketing Authorization Holder v1.0.0 (ValueSet)</a></li></ul></div><p>All codes in this table are from the system <a href=\"CodeSystem-cs-marketingauthorization-holder.html\"><code>http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000001\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000001\">000001</a></td><td>AstraZeneca</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000002\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000002\">000002</a></td><td>Pfizer</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-marketingauthorization-holder-000003\"> </a>  <a href=\"CodeSystem-cs-marketingauthorization-holder.html#cs-marketingauthorization-holder-000003\">000003</a></td><td>Bayer</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-maholder-cont",
-      "version" : "1.0.0",
-      "name" : "VSMAHolder-cont",
-      "status" : "active",
-      "expansion" : {
-        "identifier" : "urn:uuid:bbe88d96-4b5c-4a28-81af-d927c4b7cc1a",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000001",
-          "display" : "AstraZeneca"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000002",
-          "display" : "Pfizer"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000003",
-          "display" : "Bayer"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-ingredient-cont",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-ingredient-cont",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-vs-ingredient.html\">Ingredient v1.0.0 (ValueSet)</a></li><li><a href=\"CodeSystem-cs-ingredient.html\">Ingredient Code System v1.0.0 (CodeSystem)</a></li></ul></div><p>All codes in this table are from the system <a href=\"CodeSystem-cs-ingredient.html\"><code>http://example.com/fhir/example/CodeSystem/cs-ingredient</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000001\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000001\">000001</a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000002\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000002\">000002</a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000003\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000003\">000003</a></td><td>Tramadol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-ingredient-000004\"> </a>  <a href=\"CodeSystem-cs-ingredient.html#cs-ingredient-000004\">000004</a></td><td>Rosuvastatin</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-ingredient-cont",
-      "version" : "1.0.0",
-      "name" : "VSIngredient-cont",
-      "status" : "active",
-      "expansion" : {
-        "identifier" : "urn:uuid:ed199889-8d01-4db2-893c-265f4b12baca",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/ValueSet/vs-ingredient|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-ingredient|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000001",
-          "display" : "Paracetamol"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000002",
-          "display" : "Insuline lispro"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000003",
-          "display" : "Tramadol"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000004",
-          "display" : "Rosuvastatin"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-route-cont",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-route-cont",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-cs-route-holder.html\">Route Code System v1.0.0 (CodeSystem)</a></li><li><a href=\"ValueSet-vs-route-holder.html\">Route Holder v1.0.0 (ValueSet)</a></li></ul></div><p>All codes in this table are from the system <a href=\"CodeSystem-cs-route-holder.html\"><code>http://example.com/fhir/example/CodeSystem/cs-route-holder</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-route-holder-000001\"> </a>  <a href=\"CodeSystem-cs-route-holder.html#cs-route-holder-000001\">000001</a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-route-holder-000002\"> </a>  <a href=\"CodeSystem-cs-route-holder.html#cs-route-holder-000002\">000002</a></td><td>Intramuscular</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-route-cont",
-      "version" : "1.0.0",
-      "name" : "VSRoute-cont",
-      "status" : "active",
-      "expansion" : {
-        "identifier" : "urn:uuid:482365e2-e185-44c7-a3d3-8bcde9b637d0",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/ValueSet/vs-route-holder|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-route-holder|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-route-holder",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000001",
-          "display" : "Oral"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-route-holder",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000002",
-          "display" : "Intramuscular"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-doseform-cont",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-doseform-cont",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-cs-doseform.html\">Dose Form Code System v1.0.0 (CodeSystem)</a></li><li><a href=\"ValueSet-vs-dose-form.html\">Dose Form v1.0.0 (ValueSet)</a></li></ul></div><p>All codes in this table are from the system <a href=\"CodeSystem-cs-doseform.html\"><code>http://example.com/fhir/example/CodeSystem/cs-doseform</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000001\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000001\">000001</a></td><td>Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000002\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000002\">000002</a></td><td>Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-cs-doseform-000003\"> </a>  <a href=\"CodeSystem-cs-doseform.html#cs-doseform-000003\">000003</a></td><td>Syringe for injection</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx#vs-doseform-cont",
-      "version" : "1.0.0",
-      "name" : "VSDoseForm-cont",
-      "status" : "active",
-      "expansion" : {
-        "identifier" : "urn:uuid:d7a17371-b7c4-440c-a5ac-4ed5992b0304",
-        "timestamp" : "2022-03-18T08:28:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/ValueSet/vs-dose-form|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://example.com/fhir/example/CodeSystem/cs-doseform|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000001",
-          "display" : "Tablet"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000002",
-          "display" : "Capsule"
-        },
-        {
-          "system" : "http://example.com/fhir/example/CodeSystem/cs-doseform",
-          "abstract" : false,
-          "inactive" : false,
-          "code" : "000003",
-          "display" : "Syringe for injection"
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
         }]
       }
     }

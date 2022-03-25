@@ -294,32 +294,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-dose-form"/>
+        <reference value="ValueSet/Cs-med-relation-types"/>
       </reference>
-      <name value="Dose Form"/>
-      <description value="Dose Form."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-ingredient"/>
-      </reference>
-      <name value="Ingredient"/>
-      <description value="Ingredient."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-marketingauthorization-vs"/>
-      </reference>
-      <name value="Marketing Authorization Value Set"/>
-      <description value="Indicates the Marketing Authorization for a product"/>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -338,10 +316,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-med-relation-types"/>
+        <reference value="ValueSet/vs-ingredient"/>
       </reference>
-      <name value="Medication Relation Types"/>
-      <description value="Medication Relation Types."/>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -349,10 +327,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-pack-type"/>
+        <reference value="ValueSet/vs-med-relation-types"/>
       </reference>
-      <name value="Medication Package Types"/>
-      <description value="Medication Package Types."/>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -362,96 +340,8 @@
       <reference>
         <reference value="ValueSet/vs-role"/>
       </reference>
-      <name value="Ingredient role Value Set"/>
-      <description value="Indicates the role that an ingredient takes into a product"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-route-holder"/>
-      </reference>
-      <name value="Route Holder"/>
-      <description value="Route Holder."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-doseform"/>
-      </reference>
-      <name value="Dose Form Code System"/>
-      <description value="Codes for Dose Form"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-ingredient"/>
-      </reference>
-      <name value="Ingredient Code System"/>
-      <description value="Codes for ingredient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-marketingauthorization-holder"/>
-      </reference>
-      <name value="Marketing Authorization Holder Code System"/>
-      <description value="Codes for Marketing Authorization Holder"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/Cs-med-relation-types"/>
-      </reference>
-      <name value="Medication Relation Types"/>
-      <description value="Medication Relation Types."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-pack-types"/>
-      </reference>
-      <name value="Medication Package Types"/>
-      <description value="Medication Package Types."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-role"/>
-      </reference>
-      <name value="Role Code System"/>
-      <description value="Codes for ingredient role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-route-holder"/>
-      </reference>
-      <name value="Route Code System"/>
-      <description value="Codes for Administration Route"/>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

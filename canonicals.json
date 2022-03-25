@@ -7,55 +7,6 @@
     "name": "ExampleIG"
   },
   {
-    "id": "Cs-med-relation-types",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/Cs-med-relation-types",
-    "version": "1.0.0",
-    "name": "CSMedRelationTypes"
-  },
-  {
-    "id": "cs-doseform",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-doseform",
-    "version": "1.0.0",
-    "name": "CSDoseForm"
-  },
-  {
-    "id": "cs-ingredient",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-ingredient",
-    "version": "1.0.0",
-    "name": "CSIngredient"
-  },
-  {
-    "id": "cs-marketingauthorization-holder",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-marketingauthorization-holder",
-    "version": "1.0.0",
-    "name": "CSMAHolder"
-  },
-  {
-    "id": "cs-pack-types",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-pack-types",
-    "version": "1.0.0",
-    "name": "CSPackType"
-  },
-  {
-    "id": "cs-role",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-role",
-    "version": "1.0.0",
-    "name": "CSRole"
-  },
-  {
-    "id": "cs-route-holder",
-    "type": "CodeSystem",
-    "url": "http://example.com/fhir/example/CodeSystem/cs-route-holder",
-    "version": "1.0.0",
-    "name": "CSRoute"
-  },
-  {
     "id": "questionnaire-ipsx",
     "type": "Questionnaire",
     "url": "http://example.com/fhir/example/Questionnaire/questionnaire-ipsx",
@@ -133,18 +84,11 @@
     "name": "RelatedMedication"
   },
   {
-    "id": "be-marketingauthorization-vs",
+    "id": "Cs-med-relation-types",
     "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/be-marketingauthorization-vs",
+    "url": "http://example.com/fhir/example/ValueSet/Cs-med-relation-types",
     "version": "1.0.0",
-    "name": "VSMA"
-  },
-  {
-    "id": "vs-dose-form",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/vs-dose-form",
-    "version": "1.0.0",
-    "name": "VSDoseForm"
+    "name": "CSMedRelationTypes"
   },
   {
     "id": "vs-ingredient",
@@ -158,7 +102,7 @@
     "type": "ValueSet",
     "url": "http://example.com/fhir/example/ValueSet/vs-marketing-authorization-holder",
     "version": "1.0.0",
-    "name": "VSMAHolder"
+    "name": "MAHVS"
   },
   {
     "id": "vs-med-relation-types",
@@ -168,24 +112,10 @@
     "name": "VSMedRelationTypes"
   },
   {
-    "id": "vs-pack-type",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/vs-pack-type",
-    "version": "1.0.0",
-    "name": "VSPackType"
-  },
-  {
     "id": "vs-role",
     "type": "ValueSet",
     "url": "http://example.com/fhir/example/ValueSet/vs-role",
     "version": "1.0.0",
     "name": "VSRole"
-  },
-  {
-    "id": "vs-route-holder",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/vs-route-holder",
-    "version": "1.0.0",
-    "name": "VSRoute"
   }
 ]

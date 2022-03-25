@@ -1,9 +1,9 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 3, warn = 18, info = 2
-IG Publisher Version: 1.1.98
-Generated Thu Feb 03 10:39:07 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = http://example.com/fhir/example)
+err = 3, warn = 18, info = 0
+IG Publisher Version: 1.1.113
+Generated Fri Mar 25 11:09:25 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 4 / 6 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ips-meds : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 0 / 1 / 1
@@ -12,7 +12,7 @@ Generated Thu Feb 03 10:39:07 UTC 2022. FHIR version 4.0.1 for ips-meds#1.0.0 (c
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-php : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IPSXtended : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MedicationStatement-uv-ips-ext : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationStatement-uv-ips-ext : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 0 / 1 / 1
@@ -52,8 +52,6 @@ WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/Struct
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/IPSXtended'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicationStatement-uv-ips-ext.json ==
 WARNING: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-INFORMATION: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition.snapshot.element[16].binding: The element MedicationStatement.medication[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
-INFORMATION: StructureDefinition/MedicationStatement-uv-ips-ext: StructureDefinition.snapshot.element[45].binding: The element MedicationStatement.dosage.asNeeded[x] has a binding, and has multiple types ([boolean, CodeableConcept]). The binding will apply to all the types
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/MedicationStatement-uv-ips-ext'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-definedMedication.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension

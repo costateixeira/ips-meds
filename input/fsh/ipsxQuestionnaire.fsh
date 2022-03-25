@@ -15,7 +15,7 @@ Title:    "International Patient Summary - Extended Medications"
 
 * insert Question(,meds,Medications,group,true,true)
 * item[=]
-  * insert Question(,phpid,Pharmaceutical Product Identifier,string,false,false)
+//  * insert Question(,phpid,Pharmaceutical Product Identifier,string,false,false)
   * insert Question(,mpid,Medicinal Product Identifier,string,false,false)
   * insert Question(,pcid,Packaged Product Identifier,string,false,false)
   * insert Question(,other_id,Other Product Identifier,group,false,true)
